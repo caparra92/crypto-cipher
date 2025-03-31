@@ -11,7 +11,8 @@
   "dependencies": {
     "express": "*",
     "yargs": "*",
-    "colors": "*"
+    "colors": "*",
+    "dotenv": "*"
   },
   "author": "Camilo Parra",
   "license": "ISC"

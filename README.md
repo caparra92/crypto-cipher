@@ -10,25 +10,25 @@ To get help of available commands:
 
 ```shell
 docker-compose exec web node app.js --help
-docker-compose exec web node app.js cipher --help
-docker-compose exec web node app.js decipher --help
+docker-compose exec web node app.js caesar --help
+docker-compose exec web node app.js aes --help
 ```
 
 Available commands:
 
 ```shell
-cipher      Encodes a text string
-decipher    Decodes a text string
+caesar      Encodes or Decodes a text string using caesar cipher technique
+aes         Encodes and Decodes a text string using AES cipher technique
 `````
 
 This app uses <a href="https://www.npmjs.com/package/colors">Colors</a> package to display Tasks in an user-friendly manner.
 
 ### Example usage
 
-- Cipher text:
+- Cipher text using caesar:
 
 ```shell
-docker-compose exec web node app.js cipher -c
+docker-compose exec web node app.js caesar -c
 
 ======== CIPHER ========
 Enter a shift key for Caesar Cipher
@@ -44,7 +44,7 @@ Bye!
 - Decipher text:
 
 ```shell
-docker-compose exec web node app.js decipher -d
+docker-compose exec web node app.js caesar -d
 
 ======== DECIPHER ========
 Enter a shift key for Caesar Cipher

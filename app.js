@@ -4,23 +4,41 @@
 */
 
 import express from 'express';
+import readline from 'node:readline/promises';
 import colors from 'colors';
 import { argv } from './config/yargs.js';
-import { getInput, getEncodedText } from './tasks/task.js';
+import { getInput, getEncodedText } from './tasks/caesar.js';
+import { getAesText }  from './tasks/options.js';
 
 const app = express();
-
 let command = argv._[0];
-// console.log(command);
+const encoded = argv.encode || argv.c;
+const decoded = argv.decode || argv.d
+
 
 switch (command) {
-    case 'cipher':
-        console.log('======== CIPHER ========'.green);
-        await getInput();
-        break;
-        case 'decipher':
-        console.log('======== DECIPHER ========'.green);
-        await getEncodedText();
+    case 'caesar':
+        if(encoded) {
+            console.log('======== CAESAR CIPHER ========'.green);
+            await getInput();
+            break;
+        } else if(decoded) {
+            console.log('======== CAESAR DECIPHER ========'.green);
+            await getEncodedText();
+            break;
+        } else {
+            console.log(`Not valid argument`);
+            break;
+        }
+    case 'aes':
+        if(encoded) {
+            console.log('======== AES CIPHER ========'.green);
+            await getAesText();
+            break;
+        } else {
+            console.log(`Not valid argument`);
+            break;
+        }
     default:
         console.log('command not allowed');
 }

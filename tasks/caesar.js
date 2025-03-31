@@ -8,7 +8,6 @@ import colors from 'colors';
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
-    prompt: ">caesar"
 });
 
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -199,7 +198,7 @@ export const getEncodedText = async() => {
 }
 
 
-// QVIREFVGL ZJ DJG LMKXGZMA
+// QVIREFVGL ZJ DJG LMKXGZMA -> DIVERSITY (13) IS (17) OUR (15) STRENGTH (19)
 // canada (19) => VTGTWT
 // canada is good (19) => VTGTWT BL ZHHW
 // web security is a must (19) => PXU LXVNKBMR BL T FNLM
