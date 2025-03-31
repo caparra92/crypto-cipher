@@ -1,4 +1,4 @@
-### This console app applies the Caesar Cipher technique as an interactive CLI ###
+### This console app applies different Cipher techniques as an interactive CLI ###
 
 use Docker compose to install all dependencies and run the application in background:
 
