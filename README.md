@@ -12,6 +12,7 @@ To get help of available commands:
 docker-compose exec web node app.js --help
 docker-compose exec web node app.js caesar --help
 docker-compose exec web node app.js aes --help
+docker-compose exec web node app.js dsa --help
 ```
 
 Available commands:
@@ -19,6 +20,7 @@ Available commands:
 ```shell
 caesar      Encodes or Decodes a text string using caesar cipher technique
 aes         Encodes and Decodes a text string using AES cipher technique
+dsa         creates and verifies a digital signature using private and public keys
 `````
 
 This app uses <a href="https://www.npmjs.com/package/colors">Colors</a> package to display Tasks in an user-friendly manner.
