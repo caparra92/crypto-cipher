@@ -12,5 +12,6 @@ services:
     volumes:
       - .:/home/node/app
       - node_modules:/home/node/app/node_modules
+      - ./files:/usr/app/files
 volumes:
   node_modules:

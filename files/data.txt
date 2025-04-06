@@ -1,0 +1,6 @@
+Hi all,
+It is a sample message. You are going to learn how to sign a message using the digital signature technique in Cryptography.
+If this message is compromised or altered on the way, the receiver will realize it by doing a verification process in the receiving end.
+Cheers,
+Mo
+
